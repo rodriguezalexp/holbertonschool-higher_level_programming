@@ -2,7 +2,7 @@
 import random
 number = random.randint(-10, 10)
 if number > 0:
-	print("{} is positive",fotmat(number))
+	print("{} is positive".fotmat(number))
 elif number == 0:
 	print("{} is zero".format(number))
 else:
