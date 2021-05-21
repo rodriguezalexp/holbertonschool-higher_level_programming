@@ -18,8 +18,6 @@ class Rectangle:
         self.height = height
         self.width = width
 
-    # using property decorator
-    # a getter function
     @property
     def width(self):
         """getter for the private instance attribute width"""
@@ -38,8 +36,6 @@ class Rectangle:
     def height(self):
         """getter for the private instance attribute height"""
         return self.__height
-
-    # a setter function
 
     @height.setter
     def height(self, value):
