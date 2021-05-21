@@ -3,18 +3,10 @@
 
 
 class Rectangle:
-    """Represents a Rectangle
-    Attributes:
-        __Rectangle (int): size of a side of the Rectangle
-    """
+    """Represents a Rectangle"""
 
     def __init__(self, width=0, height=0):
-        """Initializes a Rectangle
-        Args:
-            width (int): size of a side of the Rectangle
-                        height (int): size
-        Returns: None
-        """
+        """Initializes a Rectangle"""
         self.height = height
         self.width = width
 
