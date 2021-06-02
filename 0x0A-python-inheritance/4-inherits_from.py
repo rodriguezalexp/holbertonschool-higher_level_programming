@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" function that returns True if the 
+""" function that returns True if the
 object is aninstance of a class"""
 
 
