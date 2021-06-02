@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" """
+"""write to the end of a txt file"""
 
 
 def append_write(filename="", text=""):
