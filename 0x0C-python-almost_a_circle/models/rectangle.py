@@ -65,6 +65,7 @@ class Rectangle(Base):
     @y.setter
     def y(self, value):
         """setter fot the private instance y"""
+
         if type(value) is not int:
             TypeError("y must be an integer")
         elif value < 0:
