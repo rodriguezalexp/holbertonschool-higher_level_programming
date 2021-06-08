@@ -54,9 +54,10 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
-        """setter for the private instance x"""
+        """ validation
+        of x """
         if type(value) is not int:
-            TypeError("x must be an integer")
+            raise TypeError("x must be an integer")
         elif value < 0:
             raise ValueError("x must be >= 0")
         self.__x = value
@@ -75,11 +76,11 @@ class Rectangle(Base):
         return self.__height * self.__width
 
     def display(self):
-        """ Display
-        rectangle """
-        print((self.__y - 1) * "\n")
-        for i in range(self.__height):
-            print("{:s}{:s}".format(" " * self.__x, "#" * self.__width))
+        """print rectangle with '#' """
+        for j in range(self.__height):
+            for i in range(self.__width):
+                print("#", end="")
+            print("")
 
     def __str__(self):
         """string represetation of a rectangle"""
