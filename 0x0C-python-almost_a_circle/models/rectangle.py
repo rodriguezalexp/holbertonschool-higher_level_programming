@@ -21,7 +21,7 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        """return private instance __with"""
+        """return private instance __width"""
         return self.__height
 
     @property
@@ -54,8 +54,7 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
-        """ validation
-        of x """
+        """setter of x"""
         if type(value) is not int:
             raise TypeError("x must be an integer")
         if value < 0:
@@ -67,7 +66,7 @@ class Rectangle(Base):
         """setter fot the private instance y"""
 
         if type(value) is not int:
-            TypeError("y must be an integer")
+            raise TypeError("y must be an integer")
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
