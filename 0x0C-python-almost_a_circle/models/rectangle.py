@@ -48,7 +48,7 @@ class Rectangle(Base):
         """setter for the private instance atributte height"""
         if type(value) is not int:
             raise TypeError("height must be an integer")
-        elif value <= 0:
+        if value <= 0:
             raise ValueError("height must be > 0")
         self.__height = value
 
@@ -58,7 +58,7 @@ class Rectangle(Base):
         of x """
         if type(value) is not int:
             raise TypeError("x must be an integer")
-        elif value < 0:
+        if value < 0:
             raise ValueError("x must be >= 0")
         self.__x = value
 
@@ -68,7 +68,7 @@ class Rectangle(Base):
 
         if type(value) is not int:
             TypeError("y must be an integer")
-        elif value < 0:
+        if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
 
@@ -77,11 +77,10 @@ class Rectangle(Base):
         return self.__height * self.__width
 
     def display(self):
-        """print rectangle with '#' """
-        for j in range(self.__height):
-            for i in range(self.__width):
-                print("#", end="")
-            print("")
+        """ print rectangle rep"""
+        print((self.__y - 1) * "\n")
+        for i in range(self.__height):
+            print("{:s}{:s}".format(" " * self.__x, "#" * self.__width))
 
     def __str__(self):
         """string represetation of a rectangle"""
