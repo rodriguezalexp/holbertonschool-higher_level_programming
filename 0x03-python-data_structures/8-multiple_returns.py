@@ -5,6 +5,6 @@
 def multiple_returns(sentence):
     """return lenght and fir char of a string"""
     if not sentence:
-        return len(sentence), 0
+        return len(sentence), None
     else:
         return len(sentence), sentence[0]
