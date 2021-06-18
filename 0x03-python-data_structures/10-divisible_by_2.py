@@ -3,11 +3,11 @@
 
 
 def divisible_by_2(my_list=[]):
-	"""return true or false"""
+    """return true or false"""
     new_list = []
     for i in my_list:
         if i % 2 == 0:
-            new.append(True)
+            new_list.append(True)
         elif i % 2 != 0:
-            new.append(False)
-        return new_list
+            new_list.append(False)
+    return new_list
