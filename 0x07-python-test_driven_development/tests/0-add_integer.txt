@@ -1,0 +1,29 @@
+The ``0-add_integer`` module
+==========================
+
+Using ``add_integer``
+----------------------
+
+Importing the function from the module:
+        >>> add_integer = __import__('0-add_integer').add_integer
+        
+Checking Regular addition:        
+        >>> add_integer(2, 3)
+        5
+
+Checking negative with positive:
+        >>> add_integer(-2, 7)
+        5
+
+Checking positive with negative:
+        >>> add_integer(7, -2)
+        5
+
+Checking constant values:
+        >>> add_integer(2) # the second value is 98
+        100
+
+Checking floar with int:
+        >>> add_integer(11.5, 8)
+        19
+
