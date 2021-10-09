@@ -39,8 +39,16 @@ Checking float with int:
         >>> add_integer(11.5, 8)
         19
 
+Checking int with float:
+        >>> add_integer(8, 11.5)
+        19
+
 Checking number with non-number:
 	    >>> add_integer(3, "2")
 	    Traceback (most recent call last):
 	    ...
 	    TypeError: b must be an integer
+
+Checking floats overflow:
+            >>> add_integer(float(7 ** 87), float(3 ** 65))
+            33383316601519078142725421809512758771980828087505683799471893671021903872
