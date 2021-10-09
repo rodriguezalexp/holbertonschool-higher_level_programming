@@ -63,7 +63,7 @@ Checking
         return 89
 
 Checking number with bool:
-	 >>> add_integer(0, False)
+	  add_integer(0, False)
          Traceback (most recent call last):
          ...
          TypeError: b must be an integer
