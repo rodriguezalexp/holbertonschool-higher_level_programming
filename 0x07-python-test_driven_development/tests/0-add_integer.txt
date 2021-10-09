@@ -53,7 +53,7 @@ Checking number with non-number:
 	TypeError: b must be an integer
 
 Checking floats overflow:
-        >>> add_integer(float(7 ** 87), float(3 ** 65))
+         add_integer(float(7 ** 87), float(3 ** 65))
         Traceback (most recent call last):
         ...
         TypeError: b must be an integer
