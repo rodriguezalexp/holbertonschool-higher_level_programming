@@ -44,18 +44,16 @@ Checking float with int:
         19
 
 
+
 Checking int with float:
         >>> add_integer(8, 11.5)
-	Traceback (most recent call last):
-	...
-	TypeError: b must be an integer
-
+        19
 
 Checking number with non-number:
 	>>> add_integer("a", 2)
 	Traceback (most recent call last):
 	...
-	TypeError: can only concatenate str (not "int") to str
+	TypeError: a must be an integer
 
 
 Checking number with non-number:
@@ -64,15 +62,3 @@ Checking number with non-number:
 	...
 	TypeError: b must be an integer
 
-Checking number with non-number:
-	>>> add_integer("a", 2)
-	Traceback (most recent call last):
-	...
-	TypeError: can only concatenate str (not "int") to str
-
-
-Checking floats overflow:
-        >>> add_integer(float(7 ** 87), float(3 ** 65))
-        Traceback (most recent call last):
-        ...
-        TypeError: b must be an integer
