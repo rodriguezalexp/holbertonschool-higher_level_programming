@@ -5,3 +5,4 @@
 def class_to_json(obj):
 	"""Represent a object to json file"""
 	return obj.__dict__
+
