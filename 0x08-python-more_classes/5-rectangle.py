@@ -63,6 +63,5 @@ class Rectangle:
             return str[:-1]
 
     def __del__(self):
-        """"""
-        del self
+        """del object"""
         print("Bye Rectangle...")
