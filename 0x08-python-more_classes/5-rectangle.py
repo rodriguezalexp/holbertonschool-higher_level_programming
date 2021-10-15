@@ -64,4 +64,4 @@ class Rectangle:
 
     def __del__(self):
         """del object"""
-        print("Bye Rectangle...")
+        return("Bye Rectangle...")
