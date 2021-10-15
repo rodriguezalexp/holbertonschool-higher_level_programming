@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """""Rectangle Class Definition"""
 
+
 class Rectangle:
     """Representation of Rectangle"""
 
@@ -13,7 +14,7 @@ class Rectangle:
     def width(self):
         """getter for the private intance attribute width"""
         return self.__width
-        
+
     @width.setter
     def width(self, value):
         """setter for the private instance attribute width"""
@@ -28,8 +29,8 @@ class Rectangle:
     def height(self):
         """getter for the private instance attribute height"""
         return self.__height
-        
-    @width.setter	
+
+    @width.setter
     def height(self, value):
         """setter for the private instance attribute height"""
         if type(value) is not int:
