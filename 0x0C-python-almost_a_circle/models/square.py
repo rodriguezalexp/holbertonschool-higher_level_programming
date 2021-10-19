@@ -1,13 +1,11 @@
 #!/usr/bin/python3
 """square class definition"""
 
-
 from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
     """Represent a square"""
-
     def __init__(self, size, x=0, y=0, id=None):
         """square constructor"""
         super().__init__(size, size, x, y, id)
@@ -35,11 +33,11 @@ class Square(Rectangle):
             for i, a in enumerate(args):
                 if i == 0:
                     self.id = a
-                elif i == 1:
+                if i == 1:
                     self.size = a
-                elif i == 2:
+                if i == 2:
                     self.x = a
-                elif i == 3:
+                if i == 3:
                     self.y = a
 
         else:
