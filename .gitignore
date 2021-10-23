@@ -44,3 +44,10 @@ python-almost-test/0-main.py
 0x0C-python-almost_a_circle/models/__pycache__/rectangle.cpython-38.pyc
 0x0C-python-almost_a_circle/models/__pycache__/square.cpython-38.pyc
 0x0C-python-almost_a_circle/9-main.py
+python-almost-test/tests/almost_circle_tests/test_base.py
+python-almost-test/tests/almost_circle_tests/__init__.py
+python-almost-test/tests/__init__.py
+0x0C-python-almost_a_circle/Rectangle.json
+0x0C-python-almost_a_circle/15-main.py
+python-almost-test/tests/almost_circle_tests/__pycache__/__init__.cpython-38.pyc
+python-almost-test/tests/almost_circle_tests/__pycache__/test_base.cpython-38.pyc
