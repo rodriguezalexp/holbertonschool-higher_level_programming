@@ -4,10 +4,7 @@ import json
 
 
 class Base:
-    """Represents a square
-    Attributes:
-        __size (int): size of a side of the square
-    """
+    """Represent Base class"""
     __nb_objects = 0
 
     def __init__(self, id=None):
@@ -41,3 +38,13 @@ class Base:
                 lo.append(cls.to_dictionary(i))
         with open(filename, 'w') as f:
             f.write(cls.to_json_string(lo))
+
+    @classmethod
+    def create(cls, **dictionary):
+        """return a instance with all attributes already set"""
+        if cls.__name__ is "Rectangle":
+            dummy = cls(1, 1)
+        if cls.__name__ is "Square":
+            dummy = cls(1)
+        dummy.update(**dictionary)
+        return dummy
