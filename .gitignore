@@ -90,3 +90,4 @@ AHORCADO/ahorcado.py
 0x0C-python-almost_a_circle/models/square.py
 ejemplos/serializacion-deserealizacion.py
 paquetes/deserializar.py
+python-almost-test/models/test_save_reload_user.py
