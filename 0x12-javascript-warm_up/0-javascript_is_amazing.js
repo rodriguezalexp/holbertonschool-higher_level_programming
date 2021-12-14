@@ -1,4 +1,4 @@
 #!/usr/bin/node
-'console function to print';
+'use strict';
 const myVar = 'JavaScript is amazing';
 console.log(myVar);
