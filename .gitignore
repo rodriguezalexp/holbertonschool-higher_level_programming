@@ -95,3 +95,4 @@ python-almost-test/models/test_save_reload_user.py
 0x12-javascript-warm_up/example.js
 0x13-javascript_objects_scopes_closures/0-main.js
 .gitignore
+0x13-javascript_objects_scopes_closures/1-main.js
