@@ -103,3 +103,5 @@ python-almost-test/models/test_save_reload_user.py
 0x13-javascript_objects_scopes_closures/6-main.js
 0x14-javascript-web_scraping/cisfun
 0x14-javascript-web_scraping/my_file.txt
+0x14-javascript-web_scraping/package.json
+0x14-javascript-web_scraping/package-lock.json
