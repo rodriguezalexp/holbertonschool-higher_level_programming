@@ -10,10 +10,10 @@ request(url, function (error, response, body) {
     console.log(error);
   }
 
-  const objs = JSON.parse(body).results;
+  const n_objs = JSON.parse(body).results;
   let d = 0;
-  for (const i in objs) {
-    const characters = objs[i].characters;
+  for (const i in n_objs) {
+    const characters = n_objs[i].characters;
     for (const idx in characters) {
       if (characters[idx] === Antilles) {
         d++;
