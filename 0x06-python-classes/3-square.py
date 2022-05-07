@@ -29,3 +29,9 @@ class Square:
             The area of the square
         """
         return (self.__size) ** 2
+    
+    def tu(self):
+        return self.__size
+    
+p = Square(12)
+print(p.tu())
