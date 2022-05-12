@@ -81,7 +81,15 @@ class Rectangle:
         if type(rect_1) is not Rectangle:
             raise TypeError("rect_1 must be an instance of Rectangle")
         if type(rect_2) is not Rectangle:
-            raise TypeError("rect_2 must ve an instance of Rectangle")
+            raise TypeError("rect_2 must be an instance of Rectangle")
         if rect_1.area() >= rect_2.area():
             return rect_1
         return rect_2
+
+my_rectangle_1 = Rectangle(8, 4)
+my_rectangle_2 = Rectangle(1, 8)
+
+try:
+    print(my_rectangle_2 == Rectangle.bigger_or_equal(my_rectangle_1, "Rect"))
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
