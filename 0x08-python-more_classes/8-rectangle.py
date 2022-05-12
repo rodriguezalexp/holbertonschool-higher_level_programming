@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 """Class to define a rectangle"""
 
+
 class Rectangle:
     """Defining a rectangle"""
-    
+
     number_of_instances = 0
     print_symbol = "#"
-    
+
     def __init__(self, width=0, height=0):
         """class contructor
         parameters:
@@ -30,7 +31,7 @@ class Rectangle:
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
-    
+
     @property
     def height(self):
         """Getter method for height"""
@@ -54,7 +55,7 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return 0
         return (self.__width * 2) + (self.__height * 2)
-    
+
     def __str__(self):
         """string representation of Rectangle based on a symbol"""
         new_str = ""
@@ -84,19 +85,3 @@ class Rectangle:
         if rect_1.area() >= rect_2.area():
             return rect_1
         return rect_2
-
-my_rectangle_1 = Rectangle(8, 4)
-my_rectangle_2 = Rectangle(2, 3)
-
-if my_rectangle_1 is Rectangle.bigger_or_equal(my_rectangle_1, my_rectangle_2):
-    print("my_rectangle_1 is bigger or equal to my_rectangle_2")
-else:
-    print("my_rectangle_2 is bigger than my_rectangle_1")
-
-
-my_rectangle_2.width = 10
-my_rectangle_2.height = 5
-if my_rectangle_1 is Rectangle.bigger_or_equal(my_rectangle_1, my_rectangle_2):
-    print("my_rectangle_1 is bigger or equal to my_rectangle_2")
-else:
-    print("my_rectangle_2 is bigger than my_rectangle_1")
