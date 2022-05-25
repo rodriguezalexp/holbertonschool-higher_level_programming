@@ -14,6 +14,6 @@ Most of this project is written in python3, but some projects are written in MyS
 - Classes and inheritance
 - Python IO
 - SQL and SQLAlchemy
-- Requests and web scraping 
+- Requests and web scraping  
 and more!
 
