@@ -1,0 +1,52 @@
+The ``0-add_integer`` module
+======================
+
+Using ``add_integer``
+-------------------
+
+Importing the function from the module:
+	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+Checking area output:
+        >>> b = BaseGeometry()
+        >>> b.area()
+        Traceback (most recent call last):
+        ...
+        Exception: area() is not implemented
+
+Cheking area with arguments:
+        >>> b.area(1)
+        Traceback (most recent call last):
+        ...
+        TypeError: area() takes 1 positional argument but 2 were given
+
+        >>> b.area("hola")
+        Traceback (most recent call last):
+        ...
+        TypeError: area() takes 1 positional argument but 2 were given
+
+Checking for integer == 0:
+        >>> b.integer_validator("int", 0)
+	Traceback (most recent call last):
+        ...
+        ValueError: int must be greater than 0
+
+
+Checking of integer < 0:
+        b.integer_validator("int", -2)
+	Traceback (most recent call last):
+        ...
+        ValueError: int must be greater than 0
+
+Checking for only 1 argument to integer_validator:
+	 >>> b.integer_validator("integer")
+	 Traceback (most recent call last):
+         ...
+	 TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+Checking for too many arguments:
+	 >>> b.integer_validator("integer", 1, 2)
+	 Traceback (most recent call last):
+         ...
+	 TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
